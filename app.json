@@ -19,10 +19,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#dobba9"
-      }
+      },
+      "package": "com.theotsori.WallMuse"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9555a4d-b948-4300-b9d1-3660982fc66e"
+      }
     }
   }
 }
