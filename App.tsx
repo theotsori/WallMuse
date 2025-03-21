@@ -24,7 +24,6 @@ import {
 } from 'react-native';
 import * as FileSystem from 'expo-file-system';
 import * as MediaLibrary from 'expo-media-library';
-import * as Permissions from 'expo-permissions';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
