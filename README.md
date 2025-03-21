@@ -2,10 +2,7 @@
 
 WallMuse is a modern, Expo-based wallpaper application built with TypeScript. It allows users to explore a grid of wallpaper categories on the home screen and view images in a sleek horizontal swipe view filtered by category. Users can view detailed information for each wallpaper, mark favorites, share, and download images—all wrapped in a beautifully animated, dark-themed interface.
 
-![WallMuse Screenshot](./assets/wallmuse-screenshot1.jpg)
-![WallMuse Screenshot](./assets/wallmuse-screenshot2.jpg)
-![WallMuse Screenshot](./assets/wallmuse-screenshot3.jpg)
-
+[📥 Download APK](https://theotsori.github.io)
 
 ## Features
 
@@ -29,7 +26,13 @@ WallMuse is a modern, Expo-based wallpaper application built with TypeScript. It
 
 ## Screenshots
 
-*Add screenshots or animated GIFs here to show WallMuse in action on your device or emulator.*
+<table>
+  <tr>
+    <td><img src="./assets/wallmuse-screenshot1.jpg" alt="WallMuse Screenshot 1" width="200"></td>
+    <td><img src="./assets/wallmuse-screenshot2.jpg" alt="WallMuse Screenshot 2" width="200"></td>
+    <td><img src="./assets/wallmuse-screenshot3.jpg" alt="WallMuse Screenshot 3" width="200"></td>
+  </tr>
+</table>
 
 ## Installation
 
@@ -81,29 +84,28 @@ Your app.json should include the necessary configuration for icons, adaptive ico
 {
   "expo": {
     "name": "WallMuse",
-    "slug": "wallmuse",
+    "slug": "WallMuse",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#121212"
+      "backgroundColor": "#d0bba9"
+    },
+    "ios": {
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon-foreground.png",
-        "backgroundImage": "./assets/adaptive-icon-background.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#dobba9"
       }
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
